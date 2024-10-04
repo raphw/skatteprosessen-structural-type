@@ -4,7 +4,7 @@
     <parent>
         <groupId>codes.rafael.structuraltype</groupId>
         <artifactId>structural-type</artifactId>
-        <version>1.7</version>
+        <version>1.8-SNAPSHOT</version>
     </parent>
 
     <artifactId>structural-type-jackson</artifactId>
