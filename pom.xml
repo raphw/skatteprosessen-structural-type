@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>no.skatteetaten.fastsetting.formueinntekt.felles.structuraltype</groupId>
+  <groupId>codes.rafael.structuraltype</groupId>
   <artifactId>structural-type</artifactId>
-  <version>0-SNAPSHOT</version>
+  <version>1.8-SNAPSHOT</version>
   <packaging>pom</packaging>
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <sonar.jacoco.reportPath>${project.build.directory}/jacoco.exec</sonar.jacoco.reportPath>
   </properties>
+  <name>Structural types for Java</name>
+  <description>
+    This project aims to create a structural representation of similar nominal Java classes. A structural type is
+    represented by an interface that contains property accessors for all properties that are defined by those
+    classes. For each class, a projection class is generated that implements that interface for delegation to the
+    nominal classes for which the structure was created. Additionally, a template implementation is created that
+    implements the structural interface as a Java bean.
+  </description>
+  <url>
+    https://github.com/raphw/skatteprosessen-structural-type
+  </url>
+  <distributionManagement>
+    <repository>
+      <id>central</id>
+      <name>Nexus Release Repository</name>
+      <url>
+        https://oss.sonatype.org/service/local/staging/deploy/maven2
+      </url>
+    </repository>
+  </distributionManagement>
+  <scm>
+    <connection>
+      scm:git:git://github.com/raphw/skatteprosessen-structural-type.git
+    </connection>
+    <developerConnection>
+      scm:git:git@github.com:raphw/skatteprosessen-structural-type.git
+    </developerConnection>
+    <url>
+      http://github.com/raphw/skatteprosessen-structural-type/tree/master
+    </url>
+    <tag>structural-type-1.6</tag>
+  </scm>
+  <developers>
+    <developer>
+      <name>Rafael Winterhalter</name>
+      <email>rafael.wth@gmail.com</email>
+      <organization>Skatteetaten</organization>
+      <organizationUrl>https://rafael.codes</organizationUrl>
+    </developer>
+  </developers>
   <modules>
     <module>structural-type-api</module>
     <module>structural-type-generator</module>
@@ -57,6 +97,20 @@
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>3.0.1</version>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
         <version>3.2.1</version>
         <executions>
@@ -65,6 +119,22 @@
             <goals>
               <goal>jar</goal>
             </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.3.1</version>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <configuration>
+              <additionalOptions>-package</additionalOptions>
+            </configuration>
           </execution>
         </executions>
       </plugin>
