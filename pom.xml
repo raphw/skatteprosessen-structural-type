@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>codes.rafael.structuraltype</groupId>
   <artifactId>structural-type</artifactId>
-  <version>1.9-SNAPSHOT</version>
+  <version>1.9</version>
   <packaging>pom</packaging>
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
@@ -39,7 +39,7 @@
     <url>
       http://github.com/raphw/skatteprosessen-structural-type/tree/master
     </url>
-    <tag>structural-type-1.6</tag>
+    <tag>structural-type-1.9</tag>
   </scm>
   <developers>
     <developer>
