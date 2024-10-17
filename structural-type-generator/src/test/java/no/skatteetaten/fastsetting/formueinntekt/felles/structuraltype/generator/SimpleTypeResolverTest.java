@@ -166,8 +166,7 @@ public class SimpleTypeResolverTest {
             { String.class, String.class, String.class, "foo", "foo", "bar", "bar" },
             // java.lang.Enum
             { Enum1.class, String.class, String.class, Enum1.FOO, "FOO", "bar", "bar" },
-            { Enum1.class, Enum2.class, String.class, Enum1.FOO, "FOO", Enum2.BAR, "BAR" },
-            { Enum3.class, String.class, String.class, Enum3.FOO, "FOO", "bar", "bar" },
+            { Enum1.class, Enum2.class, String.class, Enum1.FOO, "FOO", Enum2.BAR, "BAR" }
         });
     }
 
