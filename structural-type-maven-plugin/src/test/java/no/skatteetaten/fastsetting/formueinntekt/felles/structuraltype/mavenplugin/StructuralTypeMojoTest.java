@@ -39,7 +39,7 @@ public class StructuralTypeMojoTest {
         mojo.project.setResolvedArtifacts(Collections.singleton(toArtifact(
             "no.skatteetaten.fastsetting.formueinntekt.felles.structuraltype",
             "structural-type-api",
-            "0-SNAPSHOT",
+            "1.12-SNAPSHOT",
             PropertyDefinition.class
         )));
         mojo.project.setArtifactFilter(new ScopeArtifactFilter("compile"));
