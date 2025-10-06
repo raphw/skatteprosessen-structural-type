@@ -1,4 +1,6 @@
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>codes.rafael.structuraltype</groupId>
     <artifactId>structural-type</artifactId>
@@ -10,21 +12,17 @@
     </properties>
     <name>Structural types for Java</name>
     <description>
-        This project aims to create a structural representation of similar nominal Java classes. A structural type is represented by an interface that contains property accessors for all properties that are defined by those classes. For each class, a projection class is generated that implements that interface for delegation to the nominal classes for which the structure was created. Additionally, a template implementation is created that implements the structural interface as a Java bean.
+        This project aims to create a structural representation of similar nominal Java classes. A structural type is
+        represented by an interface that contains property accessors for all properties that are defined by those
+        classes. For each class, a projection class is generated that implements that interface for delegation to the
+        nominal classes for which the structure was created. Additionally, a template implementation is created that
+        implements the structural interface as a Java bean.
     </description>
-    <url>
-        https://github.com/raphw/skatteprosessen-structural-type
-    </url>
+    <url>https://github.com/raphw/skatteprosessen-structural-type</url>
     <scm>
-        <connection>
-            scm:git:git://github.com/raphw/skatteprosessen-structural-type.git
-        </connection>
-        <developerConnection>
-            scm:git:git@github.com:raphw/skatteprosessen-structural-type.git
-        </developerConnection>
-        <url>
-            http://github.com/raphw/skatteprosessen-structural-type/tree/master
-        </url>
+        <connection>scm:git:git://github.com/raphw/skatteprosessen-structural-type.git</connection>
+        <developerConnection>scm:git:git@github.com:raphw/skatteprosessen-structural-type.git</developerConnection>
+        <url>http://github.com/raphw/skatteprosessen-structural-type/tree/master</url>
     </scm>
     <developers>
         <developer>
