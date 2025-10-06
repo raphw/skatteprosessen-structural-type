@@ -10,6 +10,7 @@
     </parent>
 
     <artifactId>structural-type-jackson</artifactId>
+    <name>Structural types for Java (Jackson)</name>
 
     <dependencies>
         <dependency>

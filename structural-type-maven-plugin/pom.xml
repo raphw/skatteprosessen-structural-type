@@ -11,6 +11,7 @@
 
   <artifactId>structural-type-maven-plugin</artifactId>
   <packaging>maven-plugin</packaging>
+    <name>Structural types for Java (Maven Plugin)</name>
 
   <dependencies>
     <dependency>
