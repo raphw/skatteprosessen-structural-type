@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>codes.rafael.structuraltype</groupId>
     <artifactId>structural-type</artifactId>
-    <version>1.12-SNAPSHOT</version>
+    <version>1.12</version>
     <packaging>pom</packaging>
     <properties>
         <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
@@ -23,7 +22,8 @@
         <connection>scm:git:git://github.com/raphw/skatteprosessen-structural-type.git</connection>
         <developerConnection>scm:git:git@github.com:raphw/skatteprosessen-structural-type.git</developerConnection>
         <url>http://github.com/raphw/skatteprosessen-structural-type/tree/master</url>
-    </scm>
+      <tag>structural-type-1.12</tag>
+  </scm>
     <developers>
         <developer>
             <name>Rafael Winterhalter</name>
