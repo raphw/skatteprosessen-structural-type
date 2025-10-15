@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>codes.rafael.structuraltype</groupId>
     <artifactId>structural-type</artifactId>
-    <version>1.12-SNAPSHOT</version>
+    <version>1.13</version>
     <packaging>pom</packaging>
     <properties>
         <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
@@ -22,7 +22,7 @@
         <connection>scm:git:git://github.com/raphw/skatteprosessen-structural-type.git</connection>
         <developerConnection>scm:git:git@github.com:raphw/skatteprosessen-structural-type.git</developerConnection>
         <url>http://github.com/raphw/skatteprosessen-structural-type/tree/master</url>
-        <tag>structural-type-1.12</tag>
+        <tag>structural-type-1.13</tag>
     </scm>
     <developers>
         <developer>
